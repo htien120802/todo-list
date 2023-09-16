@@ -1,6 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3 side-bar">
+      <h1 class="name-app">TO DO APP</h1>
       <div>
         <mat-card class="">
           <form [formGroup]="taskForm">
@@ -35,13 +36,15 @@
         </mat-card>
       </div>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-9 mt-5">
       <div cdkDropList>
         <div class="row">
           <div class="col-md-4">
             <!-- todo -->
             <div class="example-container">
-              <h2 class="title">TO DO<span *ngIf="todo.length > 0"> - {{todo.length}}</span></h2>
+              <h2 class="title" style="color: #000">
+                TO DO<span *ngIf="todo.length > 0"> - {{ todo.length }}</span>
+              </h2>
 
               <div
                 cdkDropList
@@ -81,8 +84,11 @@
           <div class="col-md-4">
             <!-- inprogress -->
             <div class="example-container">
-              <h2 class="title" style="color: rgb(170, 170, 30)">
-                IN PROGRESS <span *ngIf="inprogress.length > 0"> - {{inprogress.length}}</span>
+              <h2 class="title" style="color: rgb(255, 0, 0)">
+                IN PROGRESS
+                <span *ngIf="inprogress.length > 0">
+                  - {{ inprogress.length }}</span
+                >
               </h2>
 
               <div
@@ -113,7 +119,9 @@
           <div class="col-md-4">
             <!-- done -->
             <div class="example-container">
-              <h2 class="title" style="color: #2fa61b">DONE <span *ngIf="done.length > 0"> - {{done.length}}</span></h2>
+              <h2 class="title" style="color: #00e676">
+                DONE <span *ngIf="done.length > 0"> - {{ done.length }}</span>
+              </h2>
 
               <div
                 cdkDropList

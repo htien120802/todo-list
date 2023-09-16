@@ -5,12 +5,19 @@
     rgba(52, 51, 79, 1) 55%,
     rgba(81, 130, 218, 1) 91%
   );
-  height: 93vh;
+  height: 100vh;
   border-radius: 0 8px 8px 0;
 }
 
+.name-app {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30%;
+}
+
 mat-card {
-  margin-top: 12px;
+  margin-top: 60px;
   padding: 10px;
   text-align: center;
 }
@@ -89,7 +96,6 @@ button {
 .title {
   margin: 0;
   padding: 10px;
-  opacity: 50%;
   border-radius: 6px;
   text-align: center;
   font-weight: bold;
